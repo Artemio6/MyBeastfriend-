@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te Quiero Naye🥰</title>
+  <style>
+    body {
+      background: #f3e6ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    #animacion {
+      width: 300px;
+      height: 300px;
+    }
+    .mensaje {
+      margin-top: 40px;
+      font-size: 1.6rem;
+      color: purple;
+      opacity: 0;
+      animation: mostrarMensaje 2s ease-in-out 3s forwards;
+    }
+
+    @keyframes crecer {
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes mostrarMensaje {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="animacion"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('animacion'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://raw.githubusercontent.com/Artemio6/JsonAnimes/refs/heads/main/Animation%20-%201744089989760.json'
+    });
+  </script>
+
+</body>
+<br>
+<div class="mensaje">🌷Para mi Mejor Amiga, 
+    <br>
+    Se que haz pasado por muchas malos momentos y horribles experiencias:(
+    <br>
+    Pero no pierdas ese brillo en tus ojos y en tus sonrisa, se tu misma siempre🌷
+    <br>
+    Aqui tienes a tu mejor amigo, que siempre te acompañara en todo lo que hagas si me lo permites🌷
+    <br>
+    Te Quiero Naye🥰
+    <br>
+    Que tengas un lindo dia :3
+    <br>
+    ATT: Tu mejor amigo🥰🌷
+    </div>
+</html>
+
